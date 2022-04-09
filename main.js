@@ -29,7 +29,7 @@ function createWindow () {
     mainWindow = null
   })
 
-  //mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
   // mainWindow.loadFile('renderer/main1.html');
   //load pages
   mainWindow.loadFile('renderer/loading.html') //loading page
