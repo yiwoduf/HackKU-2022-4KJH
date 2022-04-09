@@ -52,6 +52,22 @@
     border-bottom-left-radius: 17px;
 }
 
+.verifyButton {
+    margin-top: 10px;
+    background-color: #ff8410;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    font: bold 15px Arial;
+    text-decoration: none;
+    padding: 6px 0px 6px 0px;
+    width: 300px;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+
 .container {
     width: 100%;
     text-align: center;
@@ -90,8 +106,4 @@
     border-bottom-left-radius: 17px;
     background-color: #e2e2e2;
     color: #898989;
-}
-
-.select {
-    
 }
