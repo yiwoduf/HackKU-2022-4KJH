@@ -5,16 +5,58 @@
 }
 
 .btn {
-    font: bold 11px Arial;
+    text-align: center;
+    display:inline-block;
+    margin:0 auto;
+    font: bold 15px Arial;
     text-decoration: none;
     background-color: #EEEEEE;
     color: #333333;
-    padding: 2px 6px 2px 6px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
+    padding: 10px 10px 10px 10px;
+    width: 163px;
+    border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
+
+.loginButton {
+    margin-top: 70px;
+    background-color: #fe215a;
+    color: #FFFFFF;
+    text-align: center;
+    display:inline-block;
+    font: bold 15px Arial;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    width: 163px;
+    border-top-left-radius: 17px;
+	border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+	border-bottom-left-radius: 17px;
+}
+
+.registerButton { 
+    margin-top: 10px;
+    background-color: #ff8410;
+    color: #FFFFFF;
+    text-align: center;
+    display:inline-block;
+    font: bold 15px Arial;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    width: 163px;
+    border-top-left-radius: 17px;
+	border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+	border-bottom-left-radius: 17px;
+}   
+
+.container {
+    width: 100%;
+    text-align: center;
+  }
+
 
 .loading {
     background-image: url("image/load/loading_background.png");
@@ -30,6 +72,6 @@
 
 .loginTextLogo {
     display: flex;
-  justify-content: center;
+    justify-content: center;
     padding-top: 258px;
 }
