@@ -8,7 +8,7 @@ let mainWindow
 function createWindow () {
 
   let state = windowStateKeeper({
-    defaultWidth: 500, defaultHeight: 650
+    defaultWidth: 405, defaultHeight: 720
   })
 
   mainWindow = new BrowserWindow({
@@ -29,13 +29,13 @@ function createWindow () {
     mainWindow = null
   })
 
-  mainWindow.webContents.openDevTools();
+  //mainWindow.webContents.openDevTools();
   // mainWindow.loadFile('renderer/main1.html');
   //load pages
   mainWindow.loadFile('renderer/loading.html') //loading page
   setTimeout(() => {
     mainWindow.loadFile('renderer/login1.html') //login1 page
-  }, 3000)
+  }, 1000)
 }
 
 app.on('ready', createWindow)
