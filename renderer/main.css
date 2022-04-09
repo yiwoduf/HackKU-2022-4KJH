@@ -68,6 +68,22 @@
     border-bottom-left-radius: 17px;
 }
 
+.completeButton {
+    margin-top: 10px;
+    background-color: #fe216f;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    font: bold 15px Arial;
+    text-decoration: none;
+    padding: 6px 0px 6px 0px;
+    width: 270px;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+
 .container {
     width: 100%;
     text-align: center;
@@ -96,8 +112,10 @@
 .dropDown {
     position: relative;
     margin-top: 70px;
+    padding-left: 15px;
     width: 300px;
     height: 30px;
+    font: bold 13px Arial;
     border: 1px solid #c0c0c0;
     border-color: #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
     border-top-left-radius: 17px;
@@ -105,5 +123,52 @@
     border-top-right-radius: 17px;
     border-bottom-left-radius: 17px;
     background-color: #e2e2e2;
+    color: #898989;
+}
+
+.profileImage {
+    margin-top: 120px;
+    width: 150px;
+    
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.preferredName {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 20px;
+    resize: none;
+    font: 13px Arial;
+    border-color: #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid #c0c0c0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #efefef;
+    color: #898989;
+}
+
+.descriptionBox {
+    margin-top: 5px;
+    width: 250px;
+    height: 90px;
+    resize: none;
+    font: 13px Arial;
+    border-color: #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border: 1px solid #c0c0c0;
+    padding-left: 15px;
+    padding-top: 10px;
+    background-color: #efefef;
     color: #898989;
 }

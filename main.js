@@ -29,8 +29,9 @@ function createWindow () {
     mainWindow = null
   })
 
-  mainWindow.webContents.openDevTools();
-  // mainWindow.loadFile('renderer/main1.html');
+  //mainWindow.webContents.openDevTools();
+  //mainWindow.loadFile('renderer/login2.html');
+
   //load pages
   mainWindow.loadFile('renderer/loading.html') //loading page
   setTimeout(() => {
