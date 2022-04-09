@@ -10,22 +10,27 @@
   </head>
   <body>
     <main>
+      <div class="loginPage">
         <div class="container">
-            <div class="">
-                <img src="image/logo.jpg" id="logo-image">
+            <div class="profileImageContainer">
+                <img class="profileImage" src="image/logo.png" id="logo-image">
+            </div>
+            <div>
+              <input class="preferredName" type="text" value="Preferred Name" style="text-align: center; font-size: 14px; font: Arial bold;">
             </div>
             <div class="">
                 <div>
-                    <p>Description</p>
+                    <p style="margin-top: 25px; font: bold Arial; font-size: 14px; padding-right: 47%;">Description</p>
                 </div>
                 <div>
-                    <textarea id="description-textarea" form="usrform">Enter text here...</textarea>
+                    <textarea class ="descriptionBox" id="description-textarea" form="usrform">Describe yourself!</textarea>
                 </div>
             </div>
             <div>
-                <button type="button" id="complete-btn">Complete</button>
+                <a class="completeButton" id="complete-btn">Complete</a>
             </div>
         </div>
+      </div>
 
     </main>
     <script>
