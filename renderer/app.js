@@ -3,14 +3,35 @@ let mainWindow = remote.getCurrentWindow();
 
 //login2.html
 if (mainWindow.title == "login2"){
-  let loginWithSchoolBtn = document.getElementById('loginWithSchool-btn');
-  loginWithSchoolBtn.addEventListener('click', e => {
+  let signinBtn = document.getElementById('signin-btn'),
+    schoolSelect = document.getElementById('school-select');
+
+  signinBtn.addEventListener('click', e => {
     var popupSpan = document.getElementById('popup-span');
-    popupSpan.classList.toggle("show");
-    setTimeout(e => {
-      popupSpan.style.display="none";
-      mainWindow.loadURL('http://localhost:8080/renderer/main.html');
-    }, 1500);
+    if(schoolSelect.options[schoolSelect.selectedIndex].value != "0") {
+      popupSpan.classList.toggle("show");
+      setTimeout(e => {
+        popupSpan.style.display="none";
+        mainWindow.loadURL('http://localhost:8080/renderer/main.html');
+      }, 1500);
+    }
+  });
+}
+
+login3.html
+if (mainWindow.title == "login3"){
+  let verifyBtn = document.getElementById('verify-btn'),
+    schoolSelect = document.getElementById('school-select');
+
+    verifyBtn.addEventListener('click', e => {
+    var popupSpan = document.getElementById('popup-span');
+    if(schoolSelect.options[schoolSelect.selectedIndex].value != "0") {
+      popupSpan.classList.toggle("show");
+      setTimeout(e => {
+        popupSpan.style.display="none";
+        mainWindow.loadURL('http://localhost:8080/renderer/register.html');
+      }, 1500);
+    }
   });
 }
 
