@@ -30,12 +30,13 @@ function createWindow () {
   })
 
   //mainWindow.webContents.openDevTools();
-  mainWindow.loadFile('renderer/login2.html');
+  //mainWindow.loadFile('renderer/login2.html');
+
   //load pages
-  // mainWindow.loadFile('renderer/loading.html') //loading page
-  // setTimeout(() => {
-  //   mainWindow.loadFile('renderer/login1.html') //login1 page
-  // }, 1000)
+  mainWindow.loadFile('renderer/loading.html') //loading page
+  setTimeout(() => {
+    mainWindow.loadFile('renderer/login1.html') //login1 page
+  }, 1000)
 }
 
 app.on('ready', createWindow)
