@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- !! IMPORTANT !! -->
+    <!-- Content-Security-Policy no longer required. Will show warning in devtools. Can be ignored -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"> -->
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <main>
+      <div class="loginPage">
+        <div class="container">
+            <div class="teamBGContainer">
+                <img class="teamBGImage" src="image/classPicture.png" id="background-image">
+            </div>
+            <div class="exitButtonContainer">
+                <img class="exitButton" src="image/exit.png" id="exit-icon">
+            </div>
+            <div class="teamContainer">
+                <img class="teamImage" src="image/teamProfile.jpg" id="team-image">
+            </div>
+            <div>
+              <h1>EECS 100</h1>
+            </div>
+            <div class="courseInfos">
+                <p class="courseInfo">Time: 04:00 ~ 05:15</p>
+                <p class="courseInfo">Room: Eaton Hall 1111</p>
+                <p class="courseInfo">Lecturer: Dr. Agbaji</p>
+            </div>
+            <div>
+                <a class="gotoChatButton" id="gotoChat-btn">CHAT</a>
+            </div>
+        </div>
+      </div>
+
+    </main>
+    <script>
+      // You can also require other files to run in this process
+      require('./app.js')
+    </script>
+  </body>
+</html>
