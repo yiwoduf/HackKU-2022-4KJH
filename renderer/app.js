@@ -18,7 +18,7 @@ if (mainWindow.title == "login2"){
   });
 }
 
-login3.html
+//login3.html
 if (mainWindow.title == "login3"){
   let verifyBtn = document.getElementById('verify-btn'),
     schoolSelect = document.getElementById('school-select');
