@@ -24,14 +24,23 @@ if (mainWindow.title == "login3"){
     schoolSelect = document.getElementById('school-select');
 
     verifyBtn.addEventListener('click', e => {
-    var popupSpan = document.getElementById('popup-span');
-    if(schoolSelect.options[schoolSelect.selectedIndex].value != "0") {
-      popupSpan.classList.toggle("show");
-      setTimeout(e => {
-        popupSpan.style.display="none";
-        mainWindow.loadURL('http://localhost:8080/renderer/register.html');
-      }, 1500);
-    }
+      var popupSpan = document.getElementById('popup-span');
+      if(schoolSelect.options[schoolSelect.selectedIndex].value != "0") {
+        popupSpan.classList.toggle("show");
+        setTimeout(e => {
+          popupSpan.style.display="none";
+          mainWindow.loadURL('http://localhost:8080/renderer/register.html');
+        }, 1500);
+      }
+  });
+}
+
+//register.html
+if (mainWindow.title == "register"){
+  let completeBtn = document.getElementById('complete-btn');
+  console.log('work!');
+  completeBtn.addEventListener('click', e => {
+    mainWindow.loadURL('http://localhost:8080/renderer/main.html');
   });
 }
 
