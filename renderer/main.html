@@ -5,7 +5,7 @@
     <!-- !! IMPORTANT !! -->
     <!-- Content-Security-Policy no longer required. Will show warning in devtools. Can be ignored -->
     <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"> -->
-    <title>Login</title>
+    <title>main</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/4f2a3aecdf.js" crossorigin="anonymous"></script>
   </head>
@@ -13,21 +13,21 @@
     <main>
         <div class="container">
             <div>
-              <div class="schedule" style="display:block">
-
+              <div id="schedule-div" style="display:block">
+                <p>schedule</p>
               </div>
-              <div class="chat" style="display:none">
-
+              <div id="chat-div" style="display:none">
+                <p>chat</p>
               </div>
-              <div class="announcement" style="display:none">
-
+              <div id="announcement-div" style="display:none">
+                <p>announcement</p>
               </div>
             </div>
-            <div class="">
-                <i class="fa-solid fa-comments" id="changeModeToChat-btn"></i>
-                <i class="fa-solid fa-clock" id="changeModeToSchedule-btn"></i>
-                <i class="fa-solid fa-bullhorn" id="changeModeToAnnouncement-btn"></i>
-            </div>
+            <div>
+              <button class="fa-solid fa-comments" id="changeModeToChat-btn"></button>
+              <button class="fa-solid fa-clock" id="changeModeToSchedule-btn"></button>
+              <button class="fa-solid fa-bullhorn" id="changeModeToAnnouncement-btn"></button>
+          </div>
         </div>
 
     </main>
