@@ -7,8 +7,14 @@ let loginWithSchoolBtn = document.getElementById('loginWithSchool-btn');
 //     changeModeToannouncementBtn = document.getElementById('changeModeToAnnouncement-btn');
 
 loginWithSchoolBtn.addEventListener('click', e => {
-  mainWindow.loadURL('http://localhost:8080/renderer/main.html')
-})
+  var popupSpan = document.getElementById('popup-span');
+  popupSpan.classList.toggle("show");
+  setTimeout(e => {
+    popupSpan.style.display="none";
+    mainWindow.loadURL('http://localhost:8080/renderer/main.html');
+  }, 1500);
+
+});
 // changeModeTochatBtn.addEventListener('click', e => {
 //   mainWindow.loadURL('http://localhost:8080/renderer/scheduleMode.html');
 // });
