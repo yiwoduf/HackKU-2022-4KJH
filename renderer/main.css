@@ -1,4 +1,5 @@
 * {
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
@@ -16,8 +17,19 @@
 }
 
 .loading {
-    background-image: url("image/loading_background.png");
+    background-image: url("image/load/loading_background.png");
     width: 405px;
     height: 720px;
 }
 
+.loginPage-1 {
+    background-color: #f4f4f4;
+    width: 405px;
+    height: 720px;
+}
+
+.loginTextLogo {
+    display: flex;
+  justify-content: center;
+    padding-top: 258px;
+}
