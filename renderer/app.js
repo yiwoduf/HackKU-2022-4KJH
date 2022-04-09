@@ -24,7 +24,6 @@ if (mainWindow.title == "main"){
       announcementDiv = document.getElementById('announcement-div');
   
   changeModeToChatBtn.addEventListener('click', e => {
-    console.log("works");
     scheduleDiv.style.display="none";
     chatDiv.style.display="block";
     announcementDiv.style.display="none";
