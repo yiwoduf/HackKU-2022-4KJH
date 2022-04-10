@@ -22,7 +22,7 @@
 
 .loginButton {
     margin-top: 70px;
-    background-color: #fe215a;
+    background-color: #ff3567;
     color: #FFFFFF;
     text-align: center;
     display: inline-block;
@@ -36,9 +36,17 @@
     border-bottom-left-radius: 17px;
 }
 
+.loginButton:hover {
+  background-color: #ff1751;
+  box-shadow: 0px 3px 5px #c500316f;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+  stroke-dashoffset: -480;
+} 
+
 .registerButton {
     margin-top: 10px;
-    background-color: #ff8410;
+    background-color: #ffa047;
     color: #FFFFFF;
     text-align: center;
     display: inline-block;
@@ -50,11 +58,19 @@
     border-bottom-right-radius: 17px;
     border-top-right-radius: 17px;
     border-bottom-left-radius: 17px;
+}
+
+.registerButton:hover {
+  background-color: #ff7b00;
+  box-shadow: 0px 3px 5px #c51d006f;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+  stroke-dashoffset: -480;
 }
 
 .verifyButton {
     margin-top: 10px;
-    background-color: #ff8410;
+    background-color: #ffa450;
     color: #FFFFFF;
     text-align: center;
     display: inline-block;
@@ -68,9 +84,16 @@
     border-bottom-left-radius: 17px;
 }
 
+.verifyButton:hover {
+  background-color: #ff8410;
+  box-shadow: 0px 3px 5px #a02b006f;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+} 
+
 .completeButton {
     margin-top: 10px;
-    background-color: #fe216f;
+    background-color: #ff4486;
     color: #FFFFFF;
     text-align: center;
     display: inline-block;
@@ -83,6 +106,13 @@
     border-top-right-radius: 17px;
     border-bottom-left-radius: 17px;
 }
+
+.completeButton:hover {
+  background-color: #fe216f;
+  box-shadow: 0px 3px 5px #c500316f;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+} 
 
 .signInButton {
     margin-top: 10px;
@@ -99,6 +129,13 @@
     border-top-right-radius: 17px;
     border-bottom-left-radius: 17px;
 }
+
+.signInButton:hover {
+  background-color: #ff1751;
+  box-shadow: 0px 3px 5px #c500316f;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+} 
 
 .container {
     width: 100%;
@@ -142,6 +179,12 @@
     color: #898989;
 }
 
+.dropDown:hover {
+  width: 310px;
+    height: 35px;
+    transition: 0.4s ease-in-out;
+}
+
 .profileImage {
     margin-top: 120px;
     width: 150px;
@@ -149,6 +192,11 @@
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
+}
+
+.profileImage:hover {
+  transform: scale(1.05 ); 
+  transition: 0.2s ease-in-out;
 }
 
 .preferredName {
@@ -168,6 +216,11 @@
     padding-bottom: 4px;
     background-color: #efefef;
     color: #898989;
+}
+
+.preferredName:hover {
+  transform: scale(1.05 ); 
+  transition: 0.4s ease-in-out;
 }
 
 .descriptionBox {

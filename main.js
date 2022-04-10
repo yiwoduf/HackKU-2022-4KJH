@@ -13,8 +13,7 @@ function createWindow () {
 
   mainWindow = new BrowserWindow({
     x: state.x, y: state.y,
-    width: state.width, height: state.height,
-    minWidth: 350, maxWidth: 650, minHeight: 300,
+    width: 405, height: 720,
     webPreferences: {
       // --- !! IMPORTANT !! ---
       // Disable 'contextIsolation' to allow 'nodeIntegration'
@@ -29,14 +28,14 @@ function createWindow () {
     mainWindow = null
   })
 
-  mainWindow.webContents.openDevTools();
+  //mainWindow.webContents.openDevTools();
   //mainWindow.loadFile('renderer/main.html');
 
   // load pages
   mainWindow.loadFile('renderer/loading.html') //loading page
   setTimeout(() => {
     mainWindow.loadFile('renderer/login1.html') //login1 page
-  }, 1000)
+  }, 3000)
 }
 
 app.on('ready', createWindow)
