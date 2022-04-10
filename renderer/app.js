@@ -1,4 +1,5 @@
 const { remote } = require('electron');
+let path = require('path');
 let mainWindow = remote.getCurrentWindow();
 
 //login2.html
@@ -7,12 +8,12 @@ if (mainWindow.title == "login2"){
     schoolSelect = document.getElementById('school-select');
 
   signinBtn.addEventListener('click', e => {
-    var popupSpan = document.getElementById('popup-span');
+    var popupSpan = document.getElementById('popup2-span');
     if(schoolSelect.options[schoolSelect.selectedIndex].value != "0") {
       popupSpan.classList.toggle("show");
       setTimeout(e => {
         popupSpan.style.display="none";
-        mainWindow.loadURL('http://localhost:8080/renderer/main.html');
+        mainWindow.loadFile(path.join(__dirname, 'main.html'));
       }, 1500);
     }
   });
@@ -22,18 +23,21 @@ if (mainWindow.title == "login2"){
 if (mainWindow.title == "login3"){
   let verifyBtn = document.getElementById('verify-btn'),
     schoolSelect = document.getElementById('school-select');
-
     verifyBtn.addEventListener('click', e => {
-      var popupSpan = document.getElementById('popup-span');
+      var popupSpan = document.getElementById('popup3-span');
       if(schoolSelect.options[schoolSelect.selectedIndex].value != "0") {
         popupSpan.classList.toggle("show");
         setTimeout(e => {
           popupSpan.style.display="none";
-          mainWindow.loadURL('http://localhost:8080/renderer/register.html');
+          mainWindow.loadFile(path.join(__dirname, 'register.html'));
         }, 1500);
       }
   });
 }
+
+// if(mainWindow.title == "register"){
+//   console.log("Hello");
+// }
 
 //main.html
 if (mainWindow.title == "main"){
