@@ -1,5 +1,5 @@
 {
-  "name": "Wassup Mate",
+  "name": "WassupMate",
   "version": "1.0.0",
   "description": "Master Electron Course Code",
   "main": "main.js",
@@ -8,6 +8,12 @@
     "watch": "nodemon --exec electron .",
     "reset": "git reset --hard",
     "build": "electron-builder"
+  },
+  "build": {
+    "icon" : "renderer/image/application_icon.ico",
+    "extraResources" : [
+      "renderer/image/*"
+    ]
   },
   "repository": "https://github.com/stackacademytv/master-electron",
   "homepage": "https://github.com/stackacademytv/master-electron",
