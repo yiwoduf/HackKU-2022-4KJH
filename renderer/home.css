@@ -1,13 +1,85 @@
+.mobileScreen {
+  background-color: #f4f4f4;
+  width: 405px;
+  height: 720px;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+/* Notice Tab */
+.pictureContainer {
+  display: flex;
+justify-content: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.noticePictureZero {
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-top: 20px;
+  width: 380px;
+}
+
+.noticePictureOne {
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+    margin: 10px;
+  float: left;
+    width: 180px;
+}
+
+.noticePictureTwo {
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin: 10px;
+  float: left;
+    width: 180px;
+}
+
+.covidNotice {
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 380px;
+}
+
+.universityLogo {
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-top: 10px;
+  width: 380px;
+}
+
+.tabTitle {
+  margin-right: 200px;
+  margin-bottom: -20px;
+}
+
+.buttonContainer {
+    clear: both;
+}
+
 /* Schedule CSS Starts here */
-  
+
 body {
   flex-direction: column;
-  display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
   font-family: "DINPro", "Helvetica Neue", sans-serif;
-  padding: 3rem;
   margin: 0;
   background: #fafafa;
   box-sizing: border-box;
@@ -26,7 +98,6 @@ body {
 .calendar {
   width: 405px;
   height: 720px;
-
   border-radius: 8px;
 }
 .wrap {
@@ -188,23 +259,6 @@ tbody tr td {
 .event.double {
   height: 200%;
 }
-
-/**
-thead {
-    tr {
-      display: block;
-      position: relative;
-    }
-  }
-tbody {
-    display: block;
-    overflow: auto;
-    width: 800px;
-    height: 100%;
-  }
-*/
-
-
 
 td:hover:after {
   content: "+";
