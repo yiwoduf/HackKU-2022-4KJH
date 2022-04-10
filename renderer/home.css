@@ -9,6 +9,19 @@
   text-align: center;
 }
 
+.menuButton {
+  background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.menuImage {
+  width: 30px;
+}
+
 /* Notice Tab */
 .pictureContainer {
   display: flex;
