@@ -290,3 +290,66 @@
     50% {opacity: 1;}
     to {opacity: 0;}
   }
+
+  /* Notice Tab */
+  .pictureContainer {
+    display: flex;
+  justify-content: center;
+    width: 100%;
+    padding: 5px;
+  }
+
+.noticePictureZero {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: 20px;
+    width: 380px;
+}
+
+  .noticePictureOne {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+      margin: 10px;
+    float: left;
+      width: 180px;
+  }
+
+  .noticePictureTwo {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin: 10px;
+    float: left;
+      width: 180px;
+  }
+
+  .covidNotice {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 380px;
+  }
+
+  .universityLogo {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: 10px;
+    width: 380px;
+  }
+
+  .tabTitle {
+    margin-right: 200px;
+    margin-bottom: -20px;
+  }
+
+  .buttonContainer {
+      clear: both;
+  }
