@@ -35,15 +35,6 @@ if (mainWindow.title == "login3"){
   });
 }
 
-//register.html
-if (mainWindow.title == "register"){
-  let completeBtn = document.getElementById('complete-btn');
-  console.log('work!');
-  completeBtn.addEventListener('click', e => {
-    mainWindow.loadURL('http://localhost:8080/renderer/main.html');
-  });
-}
-
 //main.html
 if (mainWindow.title == "main"){
   let changeModeToChatBtn = document.getElementById('changeModeToChat-btn'),
