@@ -1,7 +1,7 @@
 .mobileScreen {
   background-color: #f4f4f4;
   width: 405px;
-  height: 690px;
+  height: 650px;
   margin: 0;
 }
 
@@ -129,6 +129,7 @@
 }
 
 .buttonContainer {
+  margin-top: -50px;
   clear: both;
 }
 

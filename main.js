@@ -14,6 +14,7 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     x: state.x, y: state.y,
     width: 405, height: 720,
+    frame: false, resizable: false,
     webPreferences: {
       // --- !! IMPORTANT !! ---
       // Disable 'contextIsolation' to allow 'nodeIntegration'
