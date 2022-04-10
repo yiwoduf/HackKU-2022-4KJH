@@ -31,7 +31,7 @@ function createWindow () {
   mainWindow.loadFile('renderer/loading.html') //loading page
   setTimeout(() => {
     mainWindow.loadFile('renderer/login1.html') //login1 page
-  }, 1000)
+  }, 3000)
 }
 
 app.on('ready', createWindow)
