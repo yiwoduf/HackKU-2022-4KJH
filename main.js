@@ -10,6 +10,7 @@ function createWindow () {
     x: 505, y: 30,
     width: 400, height: 715,
     frame: false, resizable: false,
+    icon: __dirname + '/Application_Icon.ico',
     webPreferences: {
       // --- !! IMPORTANT !! ---
       // Disable 'contextIsolation' to allow 'nodeIntegration'

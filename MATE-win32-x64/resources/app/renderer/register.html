@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- !! IMPORTANT !! -->
+    <!-- Content-Security-Policy no longer required. Will show warning in devtools. Can be ignored -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"> -->
+    <title>register</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <main>
+      <div class="loginPage">
+        <div class="container">
+            <div class="profileImageContainer">
+                <img class="profileImage" src="image/logo.png" id="logo-image">
+            </div>
+            <div>
+              <input class="preferredName" type="text" value="Preferred Name" style="text-align: center; font-size: 14px; font: Arial bold;">
+            </div>
+            <div class>
+                <div>
+                    <p style="margin-top: 25px; font: Arial bold; font-size: 14px; padding-right: 47%;">Description</p>
+                </div>
+                <div>
+                    <textarea class ="descriptionBox" id="description-textarea" form="usrform" placeholder="Describe yourself!"></textarea>
+                </div>
+            </div>
+            <div>
+                <a href="main.html" class="completeButton" id="complete-btn">Complete</a>
+            </div>
+        </div>
+      </div>
+
+    </main>
+    <script>
+      // You can also require other files to run in this process
+      require('./app.js')
+    </script>
+  </body>
+</html>

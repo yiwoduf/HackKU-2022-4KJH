@@ -1,0 +1,412 @@
+* {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.btn {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    font: bold 15px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 10px 10px 10px 10px;
+    width: 163px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.loginButton {
+    margin-top: 70px;
+    background-color: #ff3567;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    font: bold 15px Arial;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    width: 163px;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+
+.loginButton:hover {
+  background-color: #ff1751;
+  box-shadow: 0px 3px 5px #c500316f;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;   
+  stroke-dashoffset: -480;
+} 
+
+.registerButton {
+    margin-top: 10px;
+    background-color: #ffa047;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    font: bold 15px Arial;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    width: 163px;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+
+.registerButton:hover {
+  background-color: #ff7b00;
+  box-shadow: 0px 3px 5px #c51d006f;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+  stroke-dashoffset: -480;
+}
+
+.verifyButton {
+    margin-top: 10px;
+    background-color: #ffa450;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    font: bold 15px Arial;
+    text-decoration: none;
+    padding: 6px 0px 6px 0px;
+    width: 300px;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+
+.verifyButton:hover {
+  background-color: #ff8410;
+  box-shadow: 0px 3px 5px #a02b006f;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+} 
+
+.completeButton {
+    margin-top: 10px;
+    background-color: #ff4486;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    font: bold 15px Arial;
+    text-decoration: none;
+    padding: 6px 0px 6px 0px;
+    width: 270px;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+
+.completeButton:hover {
+  background-color: #fe216f;
+  box-shadow: 0px 3px 5px #c500316f;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+} 
+
+.signInButton {
+    margin-top: 10px;
+    background-color: #ff2865;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    font: bold 15px Arial;
+    text-decoration: none;
+    padding: 6px 0px 6px 0px;
+    width: 300px;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+
+.signInButton:hover {
+  background-color: #ff1751;
+  box-shadow: 0px 3px 5px #c500316f;
+  font-size: 18px;
+  transition: 0.4s ease-in-out;
+} 
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+
+.loading {
+    background-image: url("image/load/loading_background.png");
+    width: 405px;
+    height: 720px;
+}
+
+.loginPage {
+    background-color: #f4f4f4;
+    width: 405px;
+    height: 720px;
+}
+
+.loginTextLogo {
+    display: flex;
+    justify-content: center;
+    padding-top: 258px;
+}
+
+/* Drop Down Menu Style */
+.dropDown {
+    position: relative;
+    margin-top: 70px;
+    padding-left: 15px;
+    width: 300px;
+    height: 30px;
+    font: bold 13px Arial;
+    border: 1px solid #c0c0c0;
+    border-color: #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    background-color: #e2e2e2;
+    color: #898989;
+}
+
+.dropDown:hover {
+  width: 310px;
+    height: 35px;
+    transition: 0.4s ease-in-out;
+}
+
+.profileImage {
+    margin-top: 120px;
+    width: 150px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.profileImage:hover {
+  transform: scale(1.05 ); 
+  transition: 0.2s ease-in-out;
+}
+
+.preferredName {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 20px;
+    resize: none;
+    font: 13px Arial;
+    border-color: #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid #c0c0c0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #efefef;
+    color: #898989;
+}
+
+.preferredName:hover {
+  transform: scale(1.05 ); 
+  transition: 0.4s ease-in-out;
+}
+
+.descriptionBox {
+    margin-top: 5px;
+    width: 250px;
+    height: 90px;
+    resize: none;
+    font: 13px Arial;
+    border-color: #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border: 1px solid #c0c0c0;
+    padding-left: 15px;
+    padding-top: 10px;
+    background-color: #efefef;
+    color: #898989;
+}
+.teamBGImage {
+    margin-top: 0px;
+    width: 405px;
+    height: 300px;
+}
+
+.teamImage {
+    margin-top: -80px;
+    width: 150px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.courseInfos {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.courseInfo {
+    margin:auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 20px;
+    font: 13px Arial;
+    border-color: #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid #c0c0c0;
+    padding-top: 4px;
+    background-color: #efefef;
+    color: #898989;
+}
+
+.exitButton {
+    position: absolute;
+    margin-top: -290px;
+    width: 15px;
+    margin-left: 173px;
+    background-color: transparent;
+}
+
+.gotoChatButton {
+    margin-top: 10px;
+    background-color: #ff0054;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    font: bold 15px Arial;
+    text-decoration: none;
+    padding: 6px 0px 6px 0px;
+    width: 200px;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+/* Pop Up Related */
+/* Popup container */
+.popup {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 10px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    animation: fadeIn 2s
+  }
+  /* Add animation (fade in/out the popup) */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    50% {opacity: 1;}
+    to {opacity: 0;}
+  }
+
+  /* Notice Tab */
+  .pictureContainer {
+    display: flex;
+  justify-content: center;
+    width: 100%;
+    padding: 5px;
+  }
+
+.noticePictureZero {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: 20px;
+    width: 380px;
+}
+
+  .noticePictureOne {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+      margin: 10px;
+    float: left;
+      width: 180px;
+  }
+
+  .noticePictureTwo {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin: 10px;
+    float: left;
+      width: 180px;
+  }
+
+  .covidNotice {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 380px;
+  }
+
+  .universityLogo {
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: 10px;
+    width: 380px;
+  }
+
+  .tabTitle {
+    margin-right: 200px;
+    margin-bottom: -20px;
+  }
+
+  .buttonContainer {
+      clear: both;
+  }
