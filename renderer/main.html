@@ -6,7 +6,7 @@
     <!-- Content-Security-Policy no longer required. Will show warning in devtools. Can be ignored -->
     <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"> -->
     <title>main</title>
-    <link rel="stylesheet" href="temp2.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/4f2a3aecdf.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -14,90 +14,24 @@
         <div class="container">
             <div>
               <div id="schedule-div" style="display:block">
-                <div class="calendar">
-  
-                  <header>
-                      <button class="secondary" style="align-self: flex-start; flex: 0 0 1">Today</button>
-                      <div class="calendar__title" style="display: flex; justify-content: center; align-items: center">
-                        <div class="icon secondary chevron_left">‹</div>
-                        <h1 class="" style="flex: 1;"><span></span><strong>18 JAN – 24 JAN</strong> 2016</h1>
-                        <div class="icon secondary chevron_left">›</div>
-                      </div> 
-                      <div style="align-self: flex-start; flex: 0 0 1"></div>
-                  </header>
-                  
+                <div class="schedule">
                   <div class="outer">
-                
-                  
                   <table>
                   <thead>
                     <tr>
                       <th class="headcol"></th>
-                      <th>Mon, 18</th>
-                      <th>Tue, 19</th>
-                      <th class="today">Wed, 20</th>
-                      <th>Thu, 21</th>
-                      <th>Fri, 22</th>
-                      <th class="secondary">Sat, 23</th>
-                      <th class="secondary">Sun, 24</th>
+                      <th style="font-weight: 1000; color: #ff9600;">M</th>
+                      <th style="font-weight: 1000; color: #ff0054;">Tu</th>
+                      <th style="font-weight: 1000; color: #ff258c;">W</th>
+                      <th style="font-weight: 1000; color: #ff00ba;">Th</th>
+                      <th style="font-weight: 1000; color: #ff41e6;">F</th>
                     </tr>
                   </thead>
                   </table>
                 
                 <div class="wrap"> 
                   <table class="offset">
-                
                   <tbody>
-                    <tr>
-                      <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
-                      <td class="past"></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td class="headcol">6:00</td>
-                      <td></td>
-                      <td></td>
-                      <td class="past"></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
-                      <td class="past"></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td class="headcol">7:00</td>
-                      <td></td>
-                      <td></td>
-                      <td class="past"></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
-                      <td class="now"></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
                     <tr>
                       <td class="headcol">8:00</td>
                       <td></td>
@@ -105,8 +39,6 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
                     </tr>
                     <tr>
                       <td class="headcol"></td>
@@ -114,9 +46,8 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td><div class="event double"><input id="check" type="checkbox" class="checkbox" /><label for="check"></label>8:30–9:30 Yoga</div></td>
-                      <td></td>
-                      <td></td>
+                      <td><div class="event double"><input id="check" type="checkbox" class="checkbox" /><label for="check"></label>EECS 100</div></td>
+                      
                     </tr>
                     <tr>
                       <td class="headcol">9:00</td>
@@ -125,13 +56,9 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
                     </tr>
                     <tr>
                       <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -142,16 +69,18 @@
                       <td class="headcol">10:00</td>
                       <td></td>
                       <td></td>
-                      <td><div class="event double"><input id="check" type="checkbox" class="checkbox" /><label for="check"></label>10:00–11:00 Meeting</div></td>
-                      <td></td>
-                      <td></td>
+                      <td>
+                        <div class="event double">
+                          <input id="check" type="checkbox" class="checkbox" />
+                          <label for="check"></label>
+                          EECS 200
+                        </div>
+                      </td>
                       <td></td>
                       <td></td>
                     </tr>
                     <tr>
                       <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -165,13 +94,9 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
                     </tr>
                     <tr>
                       <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -185,13 +110,9 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
                     </tr>
                     <tr>
                       <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -205,13 +126,9 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
                     </tr>
                     <tr>
                       <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -225,13 +142,9 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
                     </tr>
                     <tr>
                       <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -245,13 +158,9 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
                     </tr>
                     <tr>
                       <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -265,13 +174,9 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
                     </tr>
                     <tr>
                       <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -285,13 +190,9 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
                     </tr>
                     <tr>
                       <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -305,13 +206,9 @@
                       <td></td>
                       <td></td>
                       <td></td>
-                      <td></td>
-                      <td></td>
                     </tr>
                     <tr>
                       <td class="headcol"></td>
-                      <td></td>
-                      <td></td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -322,9 +219,8 @@
                 </table>
                 </div>
                 </div>
-                </div>
-                
-                
+              </div>
+      
               </div>
               <div id="chat-div" style="display:none">
                 <p>chat</p>

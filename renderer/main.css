@@ -3,6 +3,226 @@
     margin: 0;
     padding: 0;
 }
+/* Schedule CSS Starts here */
+.schedule body {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: "DINPro", "Helvetica Neue", sans-serif;
+    padding: 3rem;
+    margin: 0;
+    background: #fafafa;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  
+  
+  .schedule .outer {
+    position:relative;
+  }
+  
+  .schedule {
+      margin: 0 auto;
+    width: 405px;
+    height: 720px;
+  
+    border-radius: 8px;
+  }
+  .schedule .wrap {
+  
+    overflow-x: hidden;
+    overflow-y: scroll;
+      width: 405px;
+    height: 600px;
+    border-radius: 8px;
+  }
+  
+  
+  .schedule thead th {
+  
+    text-align: center;
+    width: 80%;
+  
+  }
+  
+  .schedule tbody {
+      position: relative;
+    top: 100px;
+  }
+  .schedule table {
+    background: #fff;
+    width: 100%;
+    height: 80%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  
+  }
+  
+  
+  
+  .schedule .headcol {
+    width: 50px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0.10rem 0;
+    text-align: center;
+    border: 0;
+    position: relative;
+    top: -12px;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .schedule thead th {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+  }
+  
+  .schedule thead {
+      z-index: 2;
+      background: white;
+      border-bottom: 2px solid #ddd;
+  
+  }
+  
+  .schedule tr, tr td {
+    height: 10px;
+  }
+  .schedule td {
+    text-align: center;
+  }
+  .schedule tr:nth-child(odd) td:not(.headcol) {
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  .schedule tr:nth-child(even) td:not(.headcol) {
+    border-bottom: 1px solid #eee;
+  }
+  
+  .schedule tr td {
+    border-right: 1px solid #eee;
+    padding: 0;
+    white-space: none;
+    word-wrap: nowrap;
+  }
+  
+  .schedule tbody tr td {
+    position: relative;
+    vertical-align: top;
+    height: 30px;
+    padding: 0.25rem 0.25rem 0 0.25rem;
+    width: auto;
+  
+  }
+  
+  .schedule .secondary {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  .schedule .checkbox {
+     display: none;
+  }
+  
+  .schedule .checkbox + label {
+      border: 0;
+      outline: 0;
+      width: 80px;
+      height: 80px;
+      background: white;
+      color: transparent;
+      display:block;
+    display: none;
+  }
+  
+  .schedule .checkbox:checked + label {
+      border: 0;
+      outline: 0;
+      width: 100%;
+      height: 100%;
+      background: red;
+      color: transparent;
+      display: inline-block;
+  }
+  
+  .schedule .event {
+    background: #ff256d;
+    color: white;
+    border-radius: 2px;
+    text-align: left;
+    font-size: 0.7rem;
+    z-index: 2;
+    padding: 0.5rem;
+    overflow-x: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  .schedule .event:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background: #ff256d;
+  }
+  
+  .schedule .event.double {
+    height: 200%;
+  }
+  
+  .schedule td:hover:after {
+    content: "+";
+    vertical-align: middle;
+    font-size: 1.875rem;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+  }
+  
+  .schedule button.secondary {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 0.5rem 0.75rem;
+    font-size: 14px;
+    border-radius: 2px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .schedule button.secondary:hover {
+    background: #fafafa;
+  }
+  .schedule button.secondary:active {
+    box-shadow: none;
+  }
+  .schedule button.secondary:focus {
+    outline: 0;
+  }
+  
+  
+  .schedule .today {
+    color: red;
+  }
+  
+  .schedule .now {
+    box-shadow: 0px -1px 0px 0px red;
+  }
+  
+  .schedule .icon {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
+  
+  .schedule .icon:hover {
+    color: red;
+  }
 
 .btn {
     text-align: center;
