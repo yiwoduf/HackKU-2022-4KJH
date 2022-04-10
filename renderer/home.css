@@ -11,21 +11,28 @@
 
 .menuButton {
   background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
 
 .menuImage {
   width: 30px;
 }
 
+.menuContainer {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-top: -200px;
+}
+
 /* Notice Tab */
 .pictureContainer {
   display: flex;
-justify-content: center;
+  justify-content: center;
   width: 100%;
   padding: 5px;
 }
@@ -44,9 +51,9 @@ justify-content: center;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
-    margin: 10px;
+  margin: 10px;
   float: left;
-    width: 180px;
+  width: 180px;
 }
 
 .noticePictureTwo {
@@ -56,7 +63,7 @@ justify-content: center;
   border-bottom-left-radius: 15px;
   margin: 10px;
   float: left;
-    width: 180px;
+  width: 180px;
 }
 
 .covidNotice {
@@ -82,7 +89,7 @@ justify-content: center;
 }
 
 .buttonContainer {
-    clear: both;
+  clear: both;
 }
 
 /* Schedule CSS Starts here */
@@ -100,24 +107,23 @@ body {
 
 }
 
-.offset {
-
-}
+.offset {}
 
 .outer {
-  position:relative;
+  position: relative;
 }
 
 .calendar {
   width: 405px;
-  height: 720px;
+  height: 700px;
   border-radius: 8px;
 }
+
 .wrap {
 
   overflow-x: hidden;
   overflow-y: scroll;
-    width: 405px;
+  width: 405px;
   height: 600px;
   border-radius: 8px;
 }
@@ -144,15 +150,17 @@ header {
 }
 
 header h1 {
- font-size: 1.00rem;
- text-align: center;
- font-weight: normal;
+  font-size: 1.00rem;
+  text-align: center;
+  font-weight: normal;
 
 }
+
 tbody {
-    position: relative;
+  position: relative;
   top: 100px;
 }
+
 table {
   background: #fff;
   width: 100%;
@@ -185,18 +193,21 @@ thead th {
 }
 
 thead {
-    z-index: 2;
-    background: white;
-    border-bottom: 2px solid #ddd;
+  z-index: 2;
+  background: white;
+  border-bottom: 2px solid #ddd;
 
 }
 
-tr, tr td {
+tr,
+tr td {
   height: 10px;
 }
+
 td {
   text-align: center;
 }
+
 tr:nth-child(odd) td:not(.headcol) {
   border-bottom: 1px solid #e8e8e8;
 }
@@ -227,28 +238,28 @@ tbody tr td {
 
 
 .checkbox {
-   display: none;
-}
-
-.checkbox + label {
-    border: 0;
-    outline: 0;
-    width: 80px;
-    height: 80px;
-    background: white;
-    color: transparent;
-    display:block;
   display: none;
 }
 
-.checkbox:checked + label {
-    border: 0;
-    outline: 0;
-    width: 100%;
-    height: 100%;
-    background: red;
-    color: transparent;
-    display: inline-block;
+.checkbox+label {
+  border: 0;
+  outline: 0;
+  width: 80px;
+  height: 80px;
+  background: white;
+  color: transparent;
+  display: block;
+  display: none;
+}
+
+.checkbox:checked+label {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  color: transparent;
+  display: inline-block;
 }
 
 .event {
@@ -296,9 +307,11 @@ button.secondary {
 button.secondary:hover {
   background: #fafafa;
 }
+
 button.secondary:active {
   box-shadow: none;
 }
+
 button.secondary:focus {
   outline: 0;
 }

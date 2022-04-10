@@ -12,6 +12,7 @@
 
 <body>
   <main>
+    <div class="mobileScreen">
     <div class="container">
       <div id="schedule-div" class="calendar" style="display:block;">
         <div class="outer">
@@ -219,10 +220,10 @@
           </div>
         </div>
       </div>
-      <div id="chat-div" style="display:none;">
+      <div id="chat-div" style="display: none">
         <p>chat</p>
       </div>
-      <div id="announcement-div" style="display:none;">
+      <div id="announcement-div" style="display: none">
         <div class="mobileScreen">
           <div class="container">
             <div>
@@ -242,13 +243,13 @@
           </div>
         </div>
       </div>
+      <div class="menuContainer">
+        <button class="menuButton" id="changeModeToChat-btn"><img class="menuImage" src="image/main/chat.png"></button>
+        <button class="menuButton" id="changeModeToSchedule-btn"><img class="menuImage" src="image/main/calender.png"></button>
+        <button class="menuButton" id="changeModeToAnnouncement-btn"><img class="menuImage" src="image/main/School.png"></button>
+      </div>
     </div>
-    <div>
-      <button class="menuButton" id="changeModeToChat-btn"><img class="menuImage" src="image/main/chat.png"></button>
-      <button class="menuButton" id="changeModeToSchedule-btn"><img class="menuImage" src="image/main/calender.png"></button>
-      <button class="menuButton" id="changeModeToAnnouncement-btn"><img class="menuImage" src="image/main/School.png"></button>
-    </div>
-    </div>
+  </div>
   </main>
   <script>
     // You can also require other files to run in this process
